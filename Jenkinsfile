@@ -4,6 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = 'playwright-test'
         CI = 'true'
+        PATH = "/opt/homebrew/bin:${env.PATH}"
     }
 
     stages {
